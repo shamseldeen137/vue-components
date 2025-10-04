@@ -53,14 +53,15 @@ Card Content
 <TabA  v-if="activTab==='TabA'"/>
 <TabB  v-if="activTab==='TabB'"  />
 <TabC  v-if="activTab==='TabC'"/> -->
+<KeepAlive >
 <component :is="activTab"/>
-
+</KeepAlive>
 
 </template>
 
 <script>
 //import Card from './components/Card.vue';
-//import NameList from './components/NameList.vue';
+//import NameList from './components/NameList.vue';z
 //import ChildStyle from './components/ChildStyle.vue';
 import TabA from './components/TabA.vue';
 import TabB from './components/TabB.vue';
